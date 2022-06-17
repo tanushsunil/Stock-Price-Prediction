@@ -7,5 +7,5 @@ Hello world!
 """)
 
 dataset = pd.read_csv('./patient_data.csv')
-
-st.line_chart(dataset)
+st.title("Hello world!")  # add a title
+st.write(dataset)
