@@ -6,7 +6,6 @@ st.write("""
 Hello world!
 """)
 
-dataset = pd.read_csv('./patient_data.csv')
 st.title("Hello world!")
 
 uploaded_file = st.file_uploader("Upload a harshith")
