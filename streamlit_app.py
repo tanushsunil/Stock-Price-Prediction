@@ -4,7 +4,7 @@ import streamlit as st
 
 
 # loading the saved model
-loaded_model = pickle.load(open('linear_regression.sav', 'rb'))
+loaded_model = pickle.load(open(r'Data\linear_regression.sav', 'rb'))
 
 
 # creating a function for Prediction
