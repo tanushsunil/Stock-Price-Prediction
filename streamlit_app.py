@@ -25,7 +25,7 @@ def diabetes_prediction(input_data):
     else:
         return 'The patient is adhered'
 
-
+##
 def main():
 
     # giving a title
