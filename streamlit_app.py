@@ -9,7 +9,7 @@ loaded_model = pickle.load(open('linear_regression.sav', 'rb'))
 
 # creating a function for Prediction
 
-def diabetes_prediction(input_data):
+def adherence_prediction(input_data):
 
     # changing the input_data to numpy array
     input_data_as_numpy_array = np.asarray(input_data)
@@ -44,7 +44,7 @@ def main():
     # creating a button for Prediction
 
     if st.button('Get Adherence Test Result'):
-        adherence_diagnosis = diabetes_prediction(
+        adherence_diagnosis = adherence_prediction(
             [Age, Prescription_Days, Male, Female])
 
     st.success(adherence_diagnosis)
