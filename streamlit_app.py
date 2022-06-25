@@ -38,7 +38,7 @@ def adherence_prediction(input_data):
 def main():
 
     # giving a title
-    st.title('Patient Adherence Web App')
+    st.title('Enter the patient details')
 
     # getting the input data from the user
 
