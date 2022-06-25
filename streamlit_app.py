@@ -21,9 +21,9 @@ def adherence_prediction(input_data):
     print(prediction)
 
     if (prediction[0] == 0):
-        return 'The patient is not adhered'
+        return 'The patient is most likely to not adhere to the medication'
     else:
-        return 'The patient is adhered'
+        return 'The patient will likely be adhered to the medication'
 
 
 def main():
