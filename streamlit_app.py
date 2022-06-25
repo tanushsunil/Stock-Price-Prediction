@@ -33,8 +33,8 @@ def main():
 
     # getting the input data from the user
 
-    Age_1 = st.text_input('Age')
-    Prescription_Days_1 = st.text_input('Prescription Days')
+    Age = st.text_input('Age')
+    Prescription_Days = st.text_input('Prescription Days')
     Gender = st.selectbox('Select you Gender',
      ('Male', 'Female'))
 
