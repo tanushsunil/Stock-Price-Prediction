@@ -12,7 +12,7 @@ Model_op = st.selectbox('Which model?',
         model=pickle.load(open('KNN.sav', 'rb'))
         st.write('You selected:', Model_op)
 
-
+ 
 # creating a function for Prediction
 
 def adherence_prediction(input_data):
