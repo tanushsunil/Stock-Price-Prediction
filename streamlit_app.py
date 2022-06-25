@@ -5,12 +5,12 @@ import streamlit as st
 Model_op = st.selectbox('Which model?',
      ('Logistic Regression Classifier', 'K-Nearest Neighbor')) 
 
-    if Model_op == 'Logistic Regression Classifier':
-        model=pickle.load(open('linear_regression.sav', 'rb'))
-        st.write('You selected:', Model_op)
-    else:
-        model=pickle.load(open('KNN.sav', 'rb'))
-        st.write('You selected:', Model_op)
+if Model_op == 'Logistic Regression Classifier':
+   model=pickle.load(open('linear_regression.sav', 'rb'))
+   st.write('You selected:', Model_op)
+else:
+   model=pickle.load(open('KNN.sav', 'rb'))
+   st.write('You selected:', Model_op)
 
  
 # creating a function for Prediction
