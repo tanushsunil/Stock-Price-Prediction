@@ -38,14 +38,14 @@ def main():
     Gender = st.selectbox('Select you Gender',
      ('Male', 'Female'))
 
-    st.write('You selected:', option)
+
 
     if Gender == Male:
         Male, Female = 1,0
     elif Age_1 == Female:
         Male, Female = 0,1
     else:
-        continue
+        st.write('You selected:', option)
 
         
     # code for Prediction
