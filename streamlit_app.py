@@ -40,9 +40,9 @@ def main():
 
 
 
-    if Gender == Male:
+    if Gender == 'Male':
         Male, Female = 1,0
-    elif Age_1 == Female:
+    elif Age_1 == 'Female':
         Male, Female = 0,1
     else:
         st.write('You selected:', option)
