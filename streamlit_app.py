@@ -35,17 +35,17 @@ def main():
 
     Age_1 = st.text_input('Age')
     Prescription_Days_1 = st.text_input('Prescription Days')
-    Gender = st.text_input('Gender')
+    Gender = st.selectbox('Select you Gender',
+     ('Male', 'Female'))
 
-    Male_dic = ['Male', 'male', 'M', 'm']
-    Female_dic = ['Female', 'female', 'F', 'f']
+    st.write('You selected:', option)
 
-    if Gender == Male_dic:
+    if Gender == Male:
         Male, Female = 1,0
-    elif Age_1 == Female_dic:
+    elif Age_1 == Female:
         Male, Female = 0,1
     else:
-        st.write("Invalid Input")
+        continue
 
         
     # code for Prediction
