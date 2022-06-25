@@ -42,10 +42,12 @@ def main():
 
     if Gender == 'Male':
         Male, Female = 1,0
+        st.write('You selected:', Gender)
     elif Age_1 == 'Female':
         Male, Female = 0,1
-    else:
         st.write('You selected:', Gender)
+    else:
+       return 0
 
         
     # code for Prediction
