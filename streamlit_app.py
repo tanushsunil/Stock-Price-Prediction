@@ -2,6 +2,9 @@ import numpy as np
 import pickle
 import streamlit as st
 
+
+st.title('Patient Adherence Web App')
+
 Model_op = st.selectbox('Which model?',
      ('Logistic Regression Classifier', 'K-Nearest Neighbor')) 
 
