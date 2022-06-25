@@ -45,7 +45,7 @@ def main():
     elif Age_1 == 'Female':
         Male, Female = 0,1
     else:
-        st.write('You selected:', option)
+        st.write('You selected:', Gender)
 
         
     # code for Prediction
