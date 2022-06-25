@@ -2,9 +2,15 @@ import numpy as np
 import pickle
 import streamlit as st
 
+Model_op = st.selectbox('Which model?',
+     ('Logistic Regression Classifier', 'K-Nearest Neighbor')) 
 
-# loading the saved model
-loaded_model = pickle.load(open('linear_regression.sav', 'rb'))
+    if Model_op == 'Logistic Regression Classifier':
+        model=pickle.load(open('linear_regression.sav', 'rb'))
+        st.write('You selected:', Model_op)
+    else:
+        model=pickle.load(open('KNN.sav', 'rb'))
+        st.write('You selected:', Model_op)
 
 
 # creating a function for Prediction
@@ -17,7 +23,7 @@ def adherence_prediction(input_data):
     # reshape the array as we are predicting for one instance
     input_data_reshaped = input_data_as_numpy_array.reshape(1, -1)
 
-    prediction = loaded_model.predict(input_data_reshaped)
+    prediction = model.predict(input_data_reshaped)
     print(prediction)
 
     if (prediction[0] == 0):
