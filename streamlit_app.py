@@ -55,7 +55,7 @@ def main():
     # creating a button for Prediction
 
     if st.button('Get Adherence Test Result'):
-        adherence_diagnosis = diabetes_prediction(
+        adherence_diagnosis = adherence_prediction(
             [Age, Prescription_Days, Male, Female])
 
     st.success(adherence_diagnosis)
